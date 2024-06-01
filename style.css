@@ -1,0 +1,139 @@
+/* FONTS */
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/norse-bold/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* PAGE STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.page {
+    display:flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Styles for the left-hand column of the page */
+.background {
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-back {
+    display: flex;
+    background-color: rgba(0, 0, 0, 50%);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 25%;
+}
+
+#odin-logo {
+    height: 127px;
+    width: 95px;
+}
+
+.norse {
+    font-family: 'norsebold', sans-serif;
+    color: white;
+    font-size: 75px;
+}
+
+.credit {
+    color: white;
+    margin-top: auto;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.credit a {
+    color: white;
+}
+
+/* Styles for the right-hand column of the page */
+.sign-up-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    justify-content: space-evenly; 
+}
+
+.sign-up-section >  p {
+    font-weight: 700;
+    margin: 20px 50px 20px 20px;
+    font-size: 20px;
+}
+
+.form {
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    padding: 20px;
+}
+
+input, label {
+    display: block;
+    font-size: 14px;
+}
+
+form > h1 {
+    font-size: 20px;
+}
+
+.form-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.col-one, .col-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    background-color: #596D48;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    height: 150px;
+    width: 200px;
+    padding: 20px 32px;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    flex: 0;
+}
+
+.submit-or-log-in {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.submit-or-log-in >  p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.submit-or-log-in > p > a {
+    color: #596D48;
+}
